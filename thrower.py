@@ -9,7 +9,7 @@ def throw(i):
 
 def main():
     pool = []
-    for i in range(0, 1000):
+    for i in range(0, 500):
         p = multiprocessing.Process(target=throw, args=(i,))
         p.daemon = True
         p.start()

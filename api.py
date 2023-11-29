@@ -9,7 +9,7 @@ targets_index = 0
 async def read_target():
     global targets_index
     targets_index += 1
-    if targets_index > 1000:
+    if targets_index > 500:
         targets_index = -1
     return targets_index
 
